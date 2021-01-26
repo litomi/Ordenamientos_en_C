@@ -19,11 +19,12 @@ int main(int argc, char const *argv[])
 
 void Seleccion(int * vector, int tam){
 
-    for (size_t i = 0; i < tam; i++)
+    for (size_t i = 0; i < tam; i++) //[5][2][1] Ej. Comentado primer ciclo.
     {
-        for (size_t j = i + 1; j <= tam; j++)
+        for (size_t j = i + 1; j <= tam; j++) // i = 0 -> j = 1 -> v[j] = v[1] = 2
         {
-            if(*(vector + i) > *(vector + j)){
+            if(*(vector + i) > *(vector + j)){ //v[0] > v[1]
+                //intercambio 
                 int aux = *(vector + i);
                 *(vector + i) = *(vector + j);
                 *(vector + j) = aux;
