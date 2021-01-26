@@ -3,8 +3,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-
-
 /**
  * @param *vector a imprimir
  * @param int tam, tamaño
@@ -13,7 +11,7 @@ void Imprimir_Vector(int *arreglo, int tam)
 {
     for (size_t i = 0; i < tam; i++)
     {
-        printf("%d <- %d\n", i, *(arreglo + i));
+        printf("[%d] => %d\n", i, *(arreglo + i));
     }
 }
 
